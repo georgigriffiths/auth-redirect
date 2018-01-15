@@ -10,7 +10,7 @@ module.exports = function (opt) {
   var options = opt || {}
 
   function redirect (args, cb) {
-    var req = this.fixedargs.req$
+    var req = args.req
     var kind = args.kind
 
     var shouldRedirect = false
